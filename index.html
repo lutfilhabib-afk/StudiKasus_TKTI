@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TKTI_HABIB</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="navbar-container">
+      <div class="nama-kecil">
+        <p>LutfilHabib</p>
+      </div>
+
+      <!-- checkbox (disembunyikan) -->
+      <input type="checkbox" id="menu-toggle" />
+
+      <!-- icon menu -->
+      <label for="menu-toggle" class="menu-icon"> ☰ </label>
+
+      <nav class="nav-list">
+        <ul>
+          <li><a href="#masalah">Latar Belakang</a></li>
+          <li><a href="#tujuan">Tujuan</a></li>
+          <li><a href="#manfaat">Manfaat</a></li>
+          <li><a href="#resiko">Resiko</a></li>
+          <li><a href="#sumber-daya">Sumber Daya</a></li>
+          <li><a href="#indikator">Indikator</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="content">
+        <section id="beranda" class="beranda">
+          <div class="hero-overlay">
+            <div class="home">
+              <div class="hero-text">
+                <h3 class="hero-label">STUDI KASUS — TKTI</h3>
+                <h1>Satu Sistem, <br />Layanan Akademik yang Terintegrasi</h1>
+                <p class="hero-description">
+                  Rancangan transformasi digital untuk menggabungkan berbagai
+                  aplikasi akademik universitas menjadi satu platform yang
+                  saling terintegrasi
+                </p>
+                <a href="#masalah" class="hero-button">lihat selengkapnya</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="masalah" class="masalah">
+          <div class="masalah-set">
+            <div class="masalah-text">
+              <p>kondisi saat ini</p>
+              <h1>Mengapa sistem perlu diintegrasikan?</h1>
+              <p>
+                Saat ini layanan akademik dapat berjalan melalui beberapa
+                aplikasi/ website yang berbeda. Kondisi tersebut membuat data
+                tersebar, pengguna harus berpindah sistem, dan beberapa proses
+                berpotensi dilakukan lebih dari sekali.
+              </p>
+            </div>
+
+            <div class="masalah-gambar">
+              <img src="assets/image/mikir.png" alt="mikirrrr" />
+            </div>
+          </div>
+
+          <div class="diagram-sistem">
+            <div class="sistem-row">
+              <div class="sistem-box">SIAMIK</div>
+              <div class="sistem-box">SIADU</div>
+              <div class="sistem-box">SKPM</div>
+              <div class="sistem-box">ILMU 1</div>
+              <div class="sistem-box">ILMU 2</div>
+            </div>
+
+            <div class="sistem-hasil">SIAMIK Terintegrasi</div>
+
+            <div class="garis-penghubung"></div>
+          </div>
+        </section>
+
+        <section id="tujuan" class="tujuan">
+          <div class="tujuan-header">
+            <div class="tujuan-teks">
+              <p class="tujuan-label">TUJUAN</p>
+              <h1>Apa yang Ingin Dicapai?</h1>
+              <p class="tujuan-deskripsi">
+                Membangun layanan akademik yang lebih terintegrasi melalui satu
+                sistem yang saling terhubung. Integrasi ini diharapkan dapat
+                mempermudah akses, pengelolaan data, dan proses layanan
+                akademik. Berikut beberapa tujuan melalui integrasi sistem akademik:
+              </p>
+            </div>
+
+            <div class="tujuan-gambar">
+              <img src="assets/image/orang tunjuk.png" alt="menunjuk" />
+            </div>
+          </div>
+
+          <div class="tujuan-container">
+            <button id="prevBtn" class="tujuan-btn">
+              <img src="assets/image/previous.png" alt="Previous" />
+            </button>
+
+            <div class="tujuan-konten">
+              <h2 id="tujuanjudul"></h2>
+
+              <div class="tujuan-box">
+                <p id="tujuanText"></p>
+              </div>
+            </div>
+
+            <button id="nextBtn" class="tujuan-btn">
+              <img src="assets/image/next.png" alt="Next" />
+            </button>
+          </div>
+        </section>
+
+        <section id="manfaat" class="manfaat">
+          <div class="manfaat-container">
+            <div class="manfaat-kiri">
+              <p class="manfaat-label">MANFAAT</p>
+              <div class="manfaat-kutip">“</div>
+              <h1>
+                Layanan lebih sederhana bagi pengguna, pengelolaan lebih terstruktur
+                bagi universitas.
+              </h1>
+              <p class="manfaat-deskripsi">
+                Keberhasilan integrasi tidak hanya dilihat dari sistem yang
+                dibuat, tetapi dari perubahan yang dirasakan setelah
+                sistem digunakan.
+              </p>
+            </div>
+
+            <div class="manfaat-kanan">
+              <div class="perubahan-header">
+                <p>LIHAT PERUBAHAN</p>
+                <div class="perubahan-toggle">
+                  <button id="sebelumBtn" class="active">Sebelum</button>
+                  <button id="sesudahBtn">Sesudah</button>
+                </div>
+              </div>
+
+              <div id="perubahanList" class="perubahan-list"></div>
+            </div>
+          </div>
+        </section>
+
+        <section id="resiko" class="resiko">
+          <div class="section-heading">
+            <div>
+              <p class="label">RISIKO</p>
+              <h1>Hal yang harus diperhatikan pimpinan</h1>
+            </div>
+          </div>
+
+            <div class="risk-layout">
+                <div class="risk-list">
+                    <button class="risk-item" data-risk="migrasi">
+                        <span>01</span><strong>Migrasi data</strong><small>Risiko tinggi</small>
+                    </button>
+                    <button class="risk-item" data-risk="pengguna">
+                        <span>02</span><strong>Resistensi pengguna</strong><small>Risiko sedang</small>
+                    </button>
+                    <button class="risk-item" data-risk="biaya">
+                        <span>03</span><strong>Pembengkakan biaya</strong><small>Risiko tinggi</small>
+                    </button>
+                    <button class="risk-item" data-risk="keamanan">
+                        <span>04</span><strong>Keamanan data</strong><small>Risiko kritis</small>
+                    </button>
+                </div>
+
+                <div class="risk-detail" id="riskDetail">
+                    <p class="label">RISIKO TERPILIH</p>
+                    <h3>Migrasi data</h3>
+                    <p>
+                        Data dari berbagai sistem lama kemungkinan memiliki format, struktur, dan kualitas yang berbeda. Saat seluruh data digabungkan ke sistem baru, data dapat mengalami kesalahan, duplikasi, kehilangan, atau ketidaksesuaian sehingga informasi akademik yang digunakan menjadi tidak akurat.
+                    </p>
+                    <div class="mitigation">
+                        <strong>Mitigasi</strong>
+                        <span>Backup data · cleansing · uji migrasi · validasi · rencana pemulihan</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="sumber-daya" id="sumber-daya">
+            <div class="section-heading">
+                <div>
+                    <p class="label">SUMBER DAYA</p>
+                    <h1>Apa yang paling kritis?</h1>
+                </div>
+            </div>
+
+            <div class="resource-table">
+                <div class="resource-row heading"><span>No</span><strong>Sumber daya</strong><strong>Kebutuhan utama</strong></div>
+                <div class="resource-row"><span>01</span><strong>SDM</strong><p>Orang-orang yang mengerjakan dan mengelola proyek, seperti tim IT, programmer, project manager, database specialist, dll.</p></div>
+                <div class="resource-row"><span>02</span><strong>Anggaran</strong><p>Dana yang diperlukan untuk membuat sistem, membeli atau menyediakan infrastruktur, memindahkan data, memberikan pelatihan, dan melakukan pemeliharaan.</p></div>
+                <div class="resource-row"><span>03</span><strong>Teknologi</strong><p>Infrastruktur yang dibutuhkan agar sistem dapat berjalan, seperti server/cloud, database, jaringan, keamanan, integrasi API, dan backup data.</p></div>
+                <div class="resource-row"><span>04</span><strong>Dukungan pimpinan</strong><p>Komitmen pimpinan untuk mengambil keputusan, mengoordinasikan berbagai unit, menyediakan anggaran, dan mendukung perubahan dari sistem lama ke sistem baru.</p></div>
+            </div>
+        </section>
+
+        <section id="indikator" class="indikator">
+            <div class="section-heading light">
+                <div>
+                    <p class="label">INDIKATOR KEBERHASILAN</p>
+                    <h1>Bagaimana kita tahu proyek berhasil?</h1>
+                </div>
+             </div>
+
+            <div class="indicator-grid">
+                <article><span>01</span><strong>Keberhasilan migrasi</strong><p>Data lama berhasil dipindahkan dan tervalidasi.</p></article>
+                <article><span>02</span><strong>Ketepatan waktu</strong><p>Proyek berjalan sesuai jadwal yang telah ditentukan.</p></article>
+                <article><span>03</span><strong>Ketersediaan sistem</strong><p>Sistem dapat digunakan secara stabil oleh pengguna.</p></article>
+                <article><span>04</span><strong>Kinerja Sistem</strong><p>Kecepatan akses, downtime, dan kestabilan sistem.</p></article>
+                <article><span>05</span><strong>Tingkat penggunaan sistem</strong><p>Berapa banyak mahasiswa/dosen/staff yang aktif menggunakan sistem baru.</p></article>
+                <article><span>06</span><strong>Efisiensi proses</strong><p>Apakah waktu proses akademik menjadi lebih cepat dibandingkan sistem lama.</p></article>
+                <article><span>07</span><strong>Kepuasan pengguna</strong><p>Seberapa puas mahasiswa/dosen/staff terhadap sistem yang baru.</p></article>
+                <article><span>08</span><strong>Jumlah kendala</strong><p>Banyaknya error, keluhan, atau masalah yang terjadi.</p></article>
+            </div>
+        </section>
+      </div>
+      <script src="assets/js/script.js"></script>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2026 Tugas TKTI Individu. Lutfil Habib Tamlicha.</p>
+    </footer>
+  </body>
+</html>
